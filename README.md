@@ -1,7 +1,7 @@
 
-# Data Science Cookie Cutter
+# MLops Assignment
 
-**Note**: _This template uses poetry. If you prefer using pip, go to the [dvc-pip](https://github.com/khuyentran1401/data-science-template/tree/dvc-pip) branch instead._
+Prediction of HDB resale price and Cardiovascular issue using machine learning models and using it in a website deployed for prediciton.
 ## Why?
 It is important to structure your data science project based on a certain standard so that your teammates can easily maintain and modify your project.
 
@@ -16,49 +16,27 @@ It is important to structure your data science project based on a certain standa
 ```bash
 .
 ├── config                      
-│   ├── main.yaml                   # Main configuration file
-│   ├── model                       # Configurations for training model
-│   │   ├── model1.yaml             # First variation of parameters to train model
-│   │   └── model2.yaml             # Second variation of parameters to train model
-│   └── process                     # Configurations for processing data
-│       ├── process1.yaml           # First variation of parameters to process data
-│       └── process2.yaml           # Second variation of parameters to process data
-├── data            
-│   ├── final                       # data after training the model
-│   ├── processed                   # data after processing
-│   ├── raw                         # raw data
-│   └── raw.dvc                     # DVC file of data/raw
-├── docs                            # documentation for your project
-├── .gitignore                      # ignore files that cannot commit to Git
-├── Makefile                        # store useful commands to set up the environment
-├── models                          # store models
-├── notebooks                       # store notebooks
-├── .pre-commit-config.yaml         # configurations for pre-commit
-├── pyproject.toml                  # dependencies for poetry
-├── README.md                       # describe your project
-├── src                             # store source code
-│   ├── __init__.py                 # make src a Python module 
-│   ├── process.py                  # process data before training model
-│   └── train_model.py              # train model
-└── tests                           # store tests
-    ├── __init__.py                 # make tests a Python module 
-    ├── test_process.py             # test functions for process.py
-    └── test_train_model.py         # test functions for train_model.py
+│   ├──            # Second variation of parameters to process data                    
+├── notebooks                              # store notebooks
+|   ├── 201423L_MLOpsAssignment_v2.ipynb   # Nicole's EDA and modelling
+|   └── 210893L EDA and Modelling.ipynb    # Joseph's EDA and modelling
+├── README.md                              # describe your project and File structure
+├── Dockerfile                             # Dockerfile for deployment
+├── Procfile                               # for deployment
+├── requirements.txt                       # Versions of the libraries that we used
+├── src                                    # store source code
+│   ├── 201423L_MLOps_Final.pkl            # Nicole's saved model
+│   ├── final_model_lightgbm.pkl           # Joseph's saved model
+│   ├── app.py                             # Main flask app
+│   ├── Forms.py                           # Forms that we used
+│   └── wsgi.py                            # calling from app.py for no hard coding
+└── templates                              # store html files
+    ├── includes
+        └── _formHelper.html               
+    ├── base.html                          # base html that all html files uses
+    ├── pred.html                          # Nicole's Form for prediction
+    └── prediction.html                    # Joseph's Form for prediction
 ```
 
-## How to use this project
 
-Install Cookiecutter:
-```bash
-pip install cookiecutter
-```
-
-Create a project based on the template:
-```bash
-cookiecutter https://github.com/khuyentran1401/data-science-template --checkout dvc-poetry
-```
-
-Resources for a detailed explanation of this template:
-- [Article](https://mathdatasimplified.com/2023/06/17/how-to-structure-a-data-science-project-for-readability-and-transparency-2/)
-- [Video](https://youtu.be/TzvcPi3nsdw)
 
