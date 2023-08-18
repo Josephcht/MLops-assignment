@@ -18,8 +18,8 @@ It is important to structure your data science project based on a certain standa
 ├── config                      
 │   ├──            # Second variation of parameters to process data                    
 ├── notebooks                              # store notebooks
-|   ├── 201423L_MLOpsAssignment_v2.ipynb   # Nicole's EDA and modelling
-|   └── 210893L EDA and Modelling.ipynb    # Joseph's EDA and modelling
+    ├── 201423L_MLOpsAssignment_v2.ipynb   # Nicole's EDA and modelling
+    └── 210893L EDA and Modelling.ipynb    # Joseph's EDA and modelling
 ├── README.md                              # describe your project and File structure
 ├── Dockerfile                             # Dockerfile for deployment
 ├── Procfile                               # for deployment
