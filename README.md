@@ -17,11 +17,11 @@ It is important to structure your data science project based on a certain standa
 .
 ├── config                                 # Second variation of parameters to process data
 │   ├── model
-|   |   ├── model1.yaml                    # first model name used
-|   |   └── model2.yaml                    # second model name used
+        ├── model1.yaml                    # first model name used
+        └── model2.yaml                    # second model name used
 │   ├── process
-|   |   ├── process1.yaml                  # cols used by first model
-|   |   └── process2.yaml                  # cols used by second model
+        ├── process1.yaml                  # cols used by first model
+        └── process2.yaml                  # cols used by second model
 │   └── main.yaml                          # main yaml file used  
 ├── notebooks                              # store notebooks
     ├── 201423L_MLOpsAssignment_v2.ipynb   # Nicole's EDA and modelling
