@@ -1,0 +1,2 @@
+use_cols: ['age', 'gender', 'chest_pain', 'resting_BP', 'cholesterol', 'fasting_BS', 'resting_ECG',
+        'max_HR', 'exercise_angina', 'old_peak', 'ST_slope']
