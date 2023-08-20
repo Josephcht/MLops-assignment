@@ -15,8 +15,14 @@ It is important to structure your data science project based on a certain standa
 ## Project Structure
 ```bash
 .
-├── config                      
-│   ├── config.yaml           # Second variation of parameters to process data                    
+├── config                                 # Second variation of parameters to process data
+│   ├── model
+|   |   ├── model1.yaml                    # first model name used
+|   |   └── model2.yaml                    # second model name used
+│   ├── process
+|   |   ├── process1.yaml                  # cols used by first model
+|   |   └── process2.yaml                  # cols used by second model
+│   └── main.yaml                          # main yaml file used  
 ├── notebooks                              # store notebooks
     ├── 201423L_MLOpsAssignment_v2.ipynb   # Nicole's EDA and modelling
     └── 210893L EDA and Modelling.ipynb    # Joseph's EDA and modelling
@@ -29,6 +35,7 @@ It is important to structure your data science project based on a certain standa
 │   ├── final_model_lightgbm.pkl           # Joseph's saved model
 │   ├── app.py                             # Main flask app
 │   ├── Forms.py                           # Forms that we used
+│   ├── process.py                         # hydra process python file
 │   └── wsgi.py                            # calling from app.py for no hard coding
 └── templates                              # store html files
     ├── includes
