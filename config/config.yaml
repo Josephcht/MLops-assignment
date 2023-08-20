@@ -1,5 +1,0 @@
-joseph_cols: ['block', 'town', 'postal_code', 'month', 'flat_type',
-       'storey_range', 'floor_area_sqm', 'flat_model', 'lease_commence_date','cbd_dist', 'min_dist_mrt']
-
-nicole_cols: ['age', 'gender', 'chest_pain', 'resting_BP', 'cholesterol', 'fasting_BS', 'resting_ECG',
-        'max_HR', 'exercise_angina', 'old_peak', 'ST_slope']
