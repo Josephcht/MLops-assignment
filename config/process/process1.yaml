@@ -1,0 +1,2 @@
+use_cols: ['block', 'town', 'postal_code', 'month', 'flat_type',
+       'storey_range', 'floor_area_sqm', 'flat_model', 'lease_commence_date','cbd_dist', 'min_dist_mrt']
